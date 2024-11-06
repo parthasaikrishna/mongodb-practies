@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/formstyles.css">
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        padding: 15px;
+      }
+      body {
+        background-color: rgb(39, 39, 39);
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="main">
+      <nav><a href="/read" class="readbtn" style="font: bold; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;">read users</a></nav>
+      <form class="formstyle" action="/create" method="post">
+        <h1 style="margin-bottom: 9px">CREATE USER</h1>
+        <input class="block" type="text" placeholder="name" name="name" />
+        <input class="block" type="text" placeholder="email" name="email" />
+        <input class="block" type="text" placeholder="image url" name="image" />
+        <input class="btn" type="submit" />
+      </form>
+    </div>
+
+
+  </body>
+</html>

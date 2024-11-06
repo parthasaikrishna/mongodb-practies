@@ -1,0 +1,47 @@
+.block{
+    display: block;
+margin: 10px;
+background-color:rgb(50, 50, 50);
+color: white;
+border: none;
+border-radius: 5px ;
+width: 100vh;
+height: 8vh;
+text-decoration: black;
+align-items: center;
+padding-left: 34px;
+}
+
+.formstyle{
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0% 0% 25%;
+}
+
+.btn{
+    display: block;
+    margin: 10px;
+    background-color:rgb(21, 59, 210);
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    width: 10vh;
+    min-width: 30vh;
+    height: 5vh;
+    cursor:pointer;
+    text-align: center;
+      
+}
+
+.readbtn{
+    background-color:rgb(21, 59, 210);
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    width: 17vh;
+    height: 4vh;
+    cursor:pointer;
+    text-align: center;
+    display: block;
+    margin-left: 4vh;
+}
