@@ -9,7 +9,17 @@
 </head>
 
 <body>
-    <nav><a href="/">GO BACK TO HOME</a></nav>
+    <nav><a  style="font: bold; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;     background-color:rgb(21, 59, 210);
+        color: white;
+        border: none;
+        border-radius: 4px ;
+        width: 20vh;
+        height: 4vh;
+        cursor:pointer;
+        text-align: center;
+        display: block;
+        margin-left: 4vh;
+        margin-top: 4vh;" href="/">Back To Home</a></nav>
 
     <div class="flexit">
        <% listOfUsers.forEach(function(user){ %>
@@ -20,8 +30,8 @@
             <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:small; margin-bottom: 2px;"><%= user.name %></h3>
             <h5 style="margin-bottom: 2px; margin-top: 3px; color: rgb(46, 46, 46);"><%= user.email %></h5>
             <div class="flexbtns" style="display: flex; padding-top: 6px;">
-                <a href="" style="padding-right: 18px; padding-left: 3px; text-decoration: none; color: rgba(0, 0, 255, 0.628); font-family: monospace; font-size:large;">EditUser </a>
-                <a href="/delete/<%= user._id %>" style="text-decoration: none; color: rgb(232, 21, 21); font-family: monospace;  font-size:large;"> DeleteUser</a>
+                <a href="/edit/<%= user._id %>" style="padding-right: 18px; padding-left: 3px; text-decoration: none; color: rgba(42, 42, 255, 0.628); font-family: monospace; font-size:large;">EditUser </a>
+                <a href="/delete/<%= user._id %>" style="text-decoration: none; color: rgb(255, 36, 36); font-family: monospace;  font-size:large;"> DeleteUser</a>
             </div>
         </div>
         

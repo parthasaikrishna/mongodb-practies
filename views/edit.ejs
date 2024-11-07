@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/editstyles.css">
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        padding: 15px;
+      }
+      body {
+        background-color: rgb(39, 39, 39);
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="main">
+      <nav><a href="/read" class="readbtn" style="font: bold; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-decoration: none;     background-color:rgb(21, 59, 210);
+        color: white;
+        border: none;
+        border-radius: 5px ;
+        width: 17vh;
+        height: 4vh;
+        cursor:pointer;
+        text-align: center;
+        display: block;
+        margin-left: 4vh;">read users</a></nav>
+      <form style=" align-items: center;
+      justify-content: center;
+      margin: 10% 0% 0% 25%;" class="formstyle" action="/update/<%= user._id %>" method="post">
+        <h1 style="margin-bottom: 9px; color: rgb(207, 207, 207);">EDIT USER</h1>
+        <input style=" display: block;
+        margin: 10px;
+        background-color:rgb(50, 50, 50);
+        color: white;
+        border: none;
+        border-radius: 5px ;
+        width: 100vh;
+        height: 8vh;
+        text-decoration: black;
+        align-items: center;
+        padding-left: 34px;" class="block" type="text" placeholder="name" name="name" value="<%= user.name %>" />
+        <input style=" display: block;
+        margin: 10px;
+        background-color:rgb(50, 50, 50);
+        color: white;
+        border: none;
+        border-radius: 5px ;
+        width: 100vh;
+        height: 8vh;
+        text-decoration: black;
+        align-items: center;
+        padding-left: 34px;" class="block" type="text" placeholder="email" name="email" value="<%= user.email %>"/>
+        <input style=" display: block;
+        margin: 10px;
+        background-color:rgb(50, 50, 50);
+        color: white;
+        border: none;
+        border-radius: 5px ;
+        width: 100vh;
+        height: 8vh;
+        text-decoration: black;
+        align-items: center;
+        padding-left: 34px;" class="block" type="text" placeholder="image url" name="image" value="<%= user.image %>" />
+        <input style="   display: block;
+        margin: 10px;
+        background-color:rgb(238, 251, 0);
+        color: rgb(24, 24, 24);
+        border: none;
+        border-radius: 5px ;
+        width: 10vh;
+        min-width: 30vh;
+        height: 5vh;
+        cursor:pointer;
+        text-align: center;" class="btn" type="submit" />
+      </form>
+    </div>
+
+
+  </body>
+</html>
